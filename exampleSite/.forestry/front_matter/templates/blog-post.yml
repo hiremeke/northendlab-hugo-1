@@ -1,4 +1,26 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: label
+  type: text
+  config:
+    required: false
+  label: 'Label '
+  description: Description
+- name: article
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Article
+  description: body description
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: image
+  description: image desc
