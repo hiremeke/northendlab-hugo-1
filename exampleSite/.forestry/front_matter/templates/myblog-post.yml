@@ -1,0 +1,33 @@
+---
+label: myblog-post
+hide_body: true
+fields:
+- type: text
+  name: label
+  label: label
+- type: boolean
+  name: hide_body
+  label: hide_body
+- type: field_group_list
+  name: fields
+  label: fields
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: type
+    label: type
+  - type: field_group
+    name: config
+    label: config
+    fields:
+    - type: boolean
+      name: required
+      label: required
+  - type: text
+    name: label
+    label: label
+  - type: text
+    name: description
+    label: description
